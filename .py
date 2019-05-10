@@ -4,6 +4,8 @@ from random import randint
 from pygame.locals import *
 
 NUMBER_PLAYERS = 2000
+goal_pos = [735, 735]
+
 
 def dist_to_goal(pos, goal_pos):
 	return abs(pos[0]-goal_pos[0]) + abs(pos[1]-goal_pos[1])
@@ -92,7 +94,7 @@ class Dot:
 		else:
 			pts = [] # Idk... ------------------------------------------------------------------------------ NEEDS TO BE OPTIMIZED!
 		'''
-		pts = (1540**2-dist_to_goal(self.pos, [0, 0])**2)
+		pts = (1540**2-dist_to_goal(self.pos, goal_pos)**2)
 
 		
 
