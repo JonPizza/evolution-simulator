@@ -3,9 +3,8 @@ import sys, time, pygame
 from random import randint
 from pygame.locals import *
 
-NUMBER_PLAYERS = 2000
-goal_pos = [735, 735]
-
+NUMBER_PLAYERS = 2000 # Lower if this runs slow on your computer
+goal_pos = [735, 735] # The pixel that you want the AI to get to. If you want "Survival Mode" (Trying to keep dots alive) set to [400, 400]
 
 def dist_to_goal(pos, goal_pos):
 	return abs(pos[0]-goal_pos[0]) + abs(pos[1]-goal_pos[1])
